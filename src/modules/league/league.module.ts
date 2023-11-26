@@ -10,6 +10,7 @@ import { PlayerEntity } from './entities/player.entity';
 import { PlayerRepository } from './entities/player.repository';
 import { SeasonEntity } from './entities/season.entity';
 import { SeasonRepository } from './entities/season.repository';
+import { LeagueController } from './league.controller';
 import { LeagueService } from './league.service';
 import { PlayersService } from './players.service';
 
@@ -23,6 +24,7 @@ import { PlayersService } from './players.service';
       SeasonEntity,
     ]),
   ],
+  controllers: [LeagueController],
   providers: [
     FactionRepository,
     GameRepository,

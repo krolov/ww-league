@@ -37,6 +37,9 @@ export class ParticipantEntity extends BaseEntity {
   @Column({ type: 'decimal' })
   leagueScore: number;
 
+  @Column({ type: 'int' })
+  turnOrder: number;
+
   @CreateDateColumn()
   createdAt: Date;
 

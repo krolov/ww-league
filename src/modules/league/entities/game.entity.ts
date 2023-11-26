@@ -12,7 +12,7 @@ import { SeasonEntity } from './season.entity';
 
 @Entity('Games')
 export class GameEntity extends BaseEntity {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryGeneratedColumn('increment')
   id: number;
 
   @Column()
